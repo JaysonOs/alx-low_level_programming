@@ -1,23 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - Entry point
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	signed char x;
-	int n;
+	char ch;
 
-	for (n = 97; n <= 122; n++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-	x = n;
-	printf("%c", x);
-	if (n == 122)
-	{
-	printf("\n");
+		putchar(ch);
 	}
-	}
+	putchar('\n');
 	return (0);
 }
